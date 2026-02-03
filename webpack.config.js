@@ -1,8 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// ...existing code...
-
 module.exports = (env, argv) => {
   const isProd = argv && argv.mode === 'production';
 

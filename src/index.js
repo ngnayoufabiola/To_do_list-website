@@ -15,6 +15,16 @@ const task = [
 // functions to eterate over task arrays
 function displayTask() {
   const Container = document.getElementById('root');
+
+  if (!Container) {
+    return;
+  }
+
+  // Add heading
+  const heading = document.createElement('h1');
+  heading.textContent = "Today's To Do";
+  Container.appendChild(heading);
+
   const addedTask = document.createElement('div');
   const addContainer = document.createElement('span');
   addContainer.classList.add('add-container');
@@ -58,4 +68,6 @@ function displayTask() {
   clearButton.classList.add('clear-button');
   Container.appendChild(clearButton);
 }
-document.addEventListener('DOMContentLoaded', displayTask);
+document.addEventListener('DOMContentLoaded', () => {
+  displayTask();
+});
