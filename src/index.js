@@ -56,6 +56,6 @@ function displayTask() {
   const clearButton = document.createElement('button');
   clearButton.textContent = 'Clear all completed';
   clearButton.classList.add('clear-button');
-  Container.appendChild(clearButton);add
+  Container.appendChild(clearButton);
 }
 document.addEventListener('DOMContentLoaded', displayTask);
